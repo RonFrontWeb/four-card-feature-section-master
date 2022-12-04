@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --poppins: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 15px;
+    font-family: var(--poppins);
+}
+
+body {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    padding: 50px;
+    
+}
+
+.headline__container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline__title {
+    color: rgb(169, 169, 169);
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding-bottom: 5px;
+
+}
+.headline__subtitle {
+    color: rgb(105, 105, 105);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+.headline__text {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-size: 1rem;
+    color: rgb(177, 177, 177);
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:20px;
+    box-shadow: 10px 10px 17px 5px rgba(0,0,0,0.26);
+}
+.card--border--cyan {
+    border-top: 3px solid var(--cyan);
+    border-radius: 5px;
+}
+.card--border--red {
+    border-top: 3px solid var(--red);
+    border-radius: 5px;
+
+}
+.card--border--orange {
+    border-top: 3px solid var(--orange);
+    border-radius: 5px;
+
+}
+.card--border--blue {
+    border-top: 3px solid var(--blue);
+    border-radius: 5px;
+
+}
+
+.title {
+    color: var(--very-dark-blue);
+    align-self: flex-start;
+    padding-bottom: 10px;
+    
+}
+.text {
+    color: rgb(177, 177, 177);
+    align-self: flex-start;
+    padding-bottom: 50px;
+    font-size: .9rem;
+}
+
+.icon  {
+    height: 50px;
+    width: 50px;
+    align-self: flex-end;
+}
